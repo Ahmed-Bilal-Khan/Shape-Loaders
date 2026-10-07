@@ -1,0 +1,61 @@
+{
+  "name": "shape-loaders",
+  "version": "0.1.0",
+  "description": "Minimal SVG loading indicators for React, drawn from six shapes.",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "loader",
+    "spinner",
+    "loading",
+    "svg",
+    "shapes"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "bin": {
+    "shape-loaders": "bin/cli.mjs"
+  },
+  "files": [
+    "dist",
+    "src",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.0"
+  },
+  "author": "Ahmed Bilal Khan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed-Bilal-Khan/Shape-Loaders.git",
+    "directory": "packages/shape-loaders"
+  },
+  "homepage": "https://github.com/Ahmed-Bilal-Khan/Shape-Loaders#readme",
+  "bugs": "https://github.com/Ahmed-Bilal-Khan/Shape-Loaders/issues"
+}
