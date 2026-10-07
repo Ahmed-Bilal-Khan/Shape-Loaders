@@ -12,12 +12,13 @@ import {
   CloseIcon,
   GitHubIcon,
   MenuIcon,
+  NpmIcon,
   SwapText,
   useNarrow,
   usePopover,
   useSlidingPill,
 } from "./motion";
-import { REPO_URL, SHAPES, VARIANT_INFO, type Shape } from "./registry";
+import { NPM_URL, REPO_URL, SHAPES, VARIANT_INFO, type Shape } from "./registry";
 
 function useRoute() {
   const read = () => window.location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
@@ -130,6 +131,10 @@ function Sidebar({
           <a href={REPO_URL} className="nav-link">
             <GitHubIcon />
             GitHub
+          </a>
+          <a href={NPM_URL} className="nav-link">
+            <NpmIcon />
+            npm
           </a>
           <p className="credit">
             by{" "}

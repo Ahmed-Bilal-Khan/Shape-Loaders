@@ -20,6 +20,7 @@ import {
 } from "shape-loaders";
 
 export const REPO_URL = "https://github.com/Ahmed-Bilal-Khan/Shape-Loaders";
+export const NPM_URL = "https://www.npmjs.com/package/shape-loaders";
 
 export interface ExtraProp {
   name: "sides" | "points";
