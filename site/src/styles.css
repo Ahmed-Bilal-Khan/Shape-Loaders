@@ -234,6 +234,16 @@ pre {
   transition: color 0.15s, background-color 0.15s;
 }
 
+/* Sidebar glyphs: a resting shape is its whole outline (the loader's faint track at full
+   strength, with the moving segment hidden). Only the current page's shape animates. */
+.nav-link:not([aria-current]) svg path:first-of-type {
+  opacity: 1;
+}
+
+.nav-link:not([aria-current]) .sl-trace {
+  display: none;
+}
+
 .nav-link:hover {
   color: var(--ink);
 }
