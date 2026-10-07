@@ -235,16 +235,18 @@ pre {
 }
 
 /* Sidebar glyphs: a resting shape is its whole outline (the loader's faint track at full
-   strength, with the moving segment hidden). Only the current page's shape animates, and the
-   logo only while it is hovered or focused. */
-.nav-link:not([aria-current]) svg path:first-of-type,
-.brand:not(:hover, :focus-visible) svg path:first-of-type {
+   strength, with the moving segment hidden). Only the current page's shape animates. */
+.nav-link:not([aria-current]) svg path:first-of-type {
   opacity: 1;
 }
 
-.nav-link:not([aria-current]) .sl-trace,
-.brand:not(:hover, :focus-visible) .sl-trace {
+.nav-link:not([aria-current]) .sl-trace {
   display: none;
+}
+
+/* The logo runs only while hovered or focused, and holds its place in between. */
+.brand:not(:hover, :focus-visible) .sl-trace {
+  animation-play-state: paused;
 }
 
 .nav-link:hover {
