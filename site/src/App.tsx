@@ -128,11 +128,11 @@ function Sidebar({
           {shapes.length === 0 && <span className="nav-empty">No shapes match “{query.trim()}”.</span>}
         </nav>
         <div className="sidebar-foot">
-          <a href={REPO_URL} className="nav-link">
+          <a href={REPO_URL} className="nav-link" target="_blank" rel="noreferrer">
             <GitHubIcon />
             GitHub
           </a>
-          <a href={NPM_URL} className="nav-link">
+          <a href={NPM_URL} className="nav-link" target="_blank" rel="noreferrer">
             <NpmIcon />
             npm
           </a>

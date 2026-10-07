@@ -1,5 +1,10 @@
 # Shape Loaders
 
+[![npm version](https://img.shields.io/npm/v/shape-loaders?logo=npm)](https://www.npmjs.com/package/shape-loaders)
+[![Vercel deployment](https://img.shields.io/github/deployments/Ahmed-Bilal-Khan/Shape-Loaders/Production?label=vercel&logo=vercel)](https://shape-loaders.vercel.app)
+
+**[Try every loader in the playground →](https://shape-loaders.vercel.app)**
+
 Minimal SVG loading indicators for React, drawn from fifteen shapes: circle, oval, semicircle, crescent, square, rectangle, parallelogram, diamond, kite, triangle, pentagon, hexagon, octagon, star and heart. Each shape comes in ten animations, three sizes, and round or flat ends.
 
 - No dependencies, and no stylesheet to import
